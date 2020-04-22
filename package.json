@@ -1,0 +1,55 @@
+{
+  "name": "electron-vue-template",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve ./src/web/main.js",
+    "watch": "webpack --config electron.config.js --watch",
+    "build": "vue-cli-service build ./src/web/main.js",
+    "lint": "vue-cli-service lint ./src/web/main.js"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "core-js": "^3.6.4",
+    "electron": "^8.1.1",
+    "node-fetch": "^2.6.0",
+    "pretty-bytes": "^5.3.0",
+    "sharp": "^0.25.2",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.10.1",
+    "babel-preset-env": "^1.7.0",
+    "@babel/preset-env": "^7.9.5",
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "glob-loader": "^0.3.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
